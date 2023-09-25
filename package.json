@@ -1,0 +1,12 @@
+{
+  "name": "static-site",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Ekaterina Gomzyakova",
+  "license": "(ISC OR GPL-3.0)",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
