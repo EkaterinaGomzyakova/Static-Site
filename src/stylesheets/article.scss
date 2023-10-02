@@ -1,0 +1,11 @@
+body.article {
+  background-color: var(--pink);
+  article {
+    width: 600px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 48px;
+    }
+  }
+}
