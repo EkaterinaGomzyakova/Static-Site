@@ -102,26 +102,35 @@ module.exports = {
 
     // Section
     new HtmlWebpackPlugin({
-      template: './src/spaceobjects.html',
-      filename: './spaceobjects.html'
+      template: './src/places.html',
+      filename: './places.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/spaceships.html',
-      filename: './spaceships.html'
+      template: './src/legends.html',
+      filename: './legends.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/characters.html',
+      filename: './characters.html'
     }),
 
     // Article
     new HtmlWebpackPlugin({
-      template: './src/spaceobjects/moon.html',
-      filename: './spaceobjects/moon.html'
+      template: './src/places/metro.html',
+      filename: './places/metro.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/spaceships/buran.html',
-      filename: './spaceships/buran.html'
+      template: './src/legends/metro_2.html',
+      filename: './legends/metro_2.html'
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/characters/sculpture_dog.html',
+      filename: './characters/sculpture_dog.html'
+    }),
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
