@@ -1,0 +1,31 @@
+body.responsive_images {
+  font-family: Arial, Helvetica, sans-serif;
+  img {
+    width: 100%;
+  }
+  div {
+    margin: 20px 0;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 1440px) {
+  body.responsive_images {
+    display: flex;
+
+    img,
+    div {
+      display: block;
+      width: 50%;
+      padding: 10px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}

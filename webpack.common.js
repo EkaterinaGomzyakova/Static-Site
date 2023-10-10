@@ -66,17 +66,10 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.png/,
+        test: /\.(png|svg|jpeg|jpg|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]'
-        }
-      },
-      {
-        test: /\.svg/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'images/[hash][ext][query]'
+          filename: 'images/[name].[hash][ext][query]'
         }
       },
       {
@@ -101,6 +94,11 @@ module.exports = {
     }),
 
     // Section
+    new HtmlWebpackPlugin({
+      template: './src/responsive_images.html',
+      filename: './responsive_images.html'
+    }),
+
     new HtmlWebpackPlugin({
       template: './src/places.html',
       filename: './places.html'
